@@ -1,0 +1,413 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> 
+  <head>
+    <title>DEEM: Workshop on Data Management for End-to-End Machine Learning @ ACM SIGMOD 2024</title>
+    <link rel=StyleSheet href="styles.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  </head> 
+  <body>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2"></div>
+      <div class="col-md-7">
+        <h1 style="margin-top: .15em;">
+          <a href="#"><img src="images/logo2024.png" title="DEEM: Data Management for End-to-End Machine Learning"/></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"></div>
+      <div class="col-md-7">
+        <a href="#about">About</a> | <a href="#schedule">Schedule</a> | <a href="#dates">Important Dates</a> | 
+        <a href="#cfp">CfP</a> | <a href="#topics">Topics</a> | <a href="#submission">Submission</a> | 
+        <a href="#acceptedpapers">Accepted Papers</a> | <a href="#invitedspeakers">Invited Speakers</a> | 
+        <a href="#organisation">People</a> | <a href="#awards">Awards</a> | <a href="#sponsors">Sponsors</a>
+        <br/><br/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"><a name="about" class="internal">About</a></div>
+      <div class="col-md-7">
+        <p style="text-align: justify">
+          <b>DEEM brings together researchers and practitioners at the intersection of applied machine learning, data management and systems research, with the goal to discuss the 
+          arising data management issues in ML application scenarios</b>.
+          The DEEM workshop will be held on Sunday, June 9th, in conjunction with <a href="https://2024.sigmod.org/" target="_blank">SIGMOD/PODS 2024</a>. The workshop will be held in-person.
+        </p>
+
+        <p style="text-align: justify">The workshop solicits <b>regular research papers</b> (8 pages plus unlimited references) 
+        describing preliminary or completed research results, as well as <b>short papers</b> (up to 4 pages) such as reports on 
+        applications and tools or preliminary results, interesting use cases, problems, datasets, benchmarks, 
+        visionary ideas, and descriptions of system components and tools related to end-to-end ML pipelines.
+        Submissions should follow the guidelines as for SIGMOD, i.e. use the sigconf template for the
+        <a href="https://www.acm.org/publications/proceedings-template" target="blank">ACM proceedings format</a>.     
+      </p>
+
+        <p>Follow us on twitter <a href="https://twitter.com/deem_workshop" target="_blank">@deem_workshop</a> or contact us via email at 
+        <a href="mailto:madelon@berkeley.edu">madelon@berkeley.edu</a>. We also provide archived websites of previous versions of the workshop: 
+        <a href="2017/index.html" target="blank">DEEM 2017</a>, <a href="2018/index.html" target="blank">DEEM 2018</a>, <a href="2019/index.html" target="blank">DEEM 2019</a>, <a href="2020/index.html" target="blank">DEEM 2020</a>, 
+        <a href="2021/index.html" target="blank">DEEM 2021</a>, <a href="2022/index.html" target="blank">DEEM 2022</a>, and <a href="2023/index.html" target="blank">DEEM 2023</a>.</p> 
+
+        <p><b>DEEM 2024 Proceedings</b>: <a href="https://dl.acm.org/doi/proceedings/10.1145/3650203" target="blank">https://dl.acm.org/doi/proceedings/10.1145/3650203</a>
+        
+      </div>
+    </div>
+
+<!-- PROGRAM START -->
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-2 stitle"><a name="schedule" class="internal">Schedule</a></div>
+  <div class="col-md-7">
+    The program will consist of contributed talks on accepted papers and a keynote from academia or industry.<br>
+    New in 2024 are poster sessions to spark more discussion and networking, with the DEEM audience.<br>
+    
+    <br>
+    <!-- PROGRAM START -->    
+    <b>Sunday, June 9th (all times are in Chile Standard Time/CLT);</b><br/>
+
+    <br/>
+    <!-- Keynote -->
+    <div class="col-md-3"><b>9:00am - 10:00am</b></div>
+    <div class="col-md-9"><b>Opening Remarks and Keynote Address</b><br/>
+    <b>Empowering Users with AI: The Role of AutoML and Data Discovery in Data-Driven Exploration</b><br/>
+    <i>Keynote Speaker: <a href="https://engineering.nyu.edu/faculty/juliana-freire" target="_blank">Juliana Freire</a> (New York University)</i><br/>
+    <p>Artificial Intelligence (AI) is reshaping data-driven exploration. In this talk, we will explore how AutoML and data discovery enhance human capabilities. We present AlphaAutoML, an open-source Python library designed to support a wide range of machine learning tasks across various data types. AlphaAutoML combines deep reinforcement learning and meta-learning to effectively construct pipelines over a large collection of primitives. It seamlessly integrates AutoML within the data science lifecycle through an ecosystem of tools that facilitate user-in-the-loop tasks, such as selecting suitable pipelines and customizing these pipelines for complex problems. Additionally, we will discuss the emerging field of dataset search, a critical component of data-centric AI. We will review the opportunities it creates to enrich analytics and improve machine learning models, and present methods that support discovery in large dataset collections.</p></div><br/>
+    <!-- Break -->
+    <div class="col-md-3"><b>10:00am - 10:30am</b></div>
+    <div class="col-md-9"><b>Break</b></div><br/>
+
+    <!-- Session 1: Data Preparation and Pipelining -->
+    <div class="col-md-12"></div><br/>
+    <br/>
+    <div class="col-md-3"><b>10:30am - 11:20am</b></div>
+    <div class="col-md-9"><b>Session 1: Data Preparation and Pipelining</b> - Chair: Madelon Hulsebos</div><br/>
+    <div class="col-md-12"></div>
+    <div class="col-md-3">&nbsp;10:30am</div>
+    <div class="col-md-9">
+      <b>Croissant: A Metadata Format for ML-Ready Datasets</b> (10 min)<br/>
+      <i>Mubashara Akthar (King’s College London); Omar Benjelloun (Google); Costanza Conforti (Google); Pieter Gijsbers (TU Eindhoven); Joan Giner-Miguelez (Universitat Oberta de Catalunya); Nitisha Jain (King’s College London); Michael Kuchnik (Meta); quentin lhoest (Hugging Face); Pierre Marcenac (Google); Manil Maskey (NASA MSFC); Peter Mattson (Google); Luis Oala (Dotphoton AG); Pierre Ruyssen (Google); Rajat Shinde (NASA IMPACT UAH); Elena Simperl (King's College London); Geoff Thomas (Kaggle); Vyacheslav Tykhonov (DANS-KNAW); Jos van der Velde (TU Eindhoven); Joaquin Vanschoren (TU Eindhoven); Steffen Vogler (Bayer AG); Carole-Jean Wu (Meta / FAIR)</i>
+    </div><br/>
+    <div class="col-md-3">&nbsp;10:40am</div>
+    <div class="col-md-9">
+      <b>Towards Interactively Improving ML Data Preparation Code via "Shadow Pipelines"</b> (10 min)<br/>
+      <i>Stefan Grafberger (University of Amsterdam); Paul Groth (University of Amsterdam); Sebastian Schelter (University of Amsterdam)</i>
+    </div><br/>
+    <div class="col-md-3">&nbsp;10:50am</div>
+    <div class="col-md-9">
+      <b>Reactive Dataflow for Inflight Error Handling in ML Workflows <a href="https://youtu.be/Hh6jAEWnPvg" target="_blank">(recording)</a></b> (20 min)<br/>
+      <i>Abhilash Jindal (IIT Delhi); Kaustubh Beedkar (IIT Delhi); Vishal Singh (Indian Institute of Technology Delhi); Jawahar Nausheen Mohammed (Indian Institute of Technology Delhi); Tushar Singla (IIT Delhi); Aman Gupta (Indian Institute of Technology Delhi); Keerti Choudhary (IIT Delhi)</i>
+    </div><br/>
+    <div class="col-md-3">&nbsp;11:10am</div>
+    <div class="col-md-9">
+      <b>Towards Efficient Data Wrangling with LLMs using Code Generation</b> (10 min)<br/>
+      <i>Xue Li (University of Amsterdam / MotherDuck); Till Döhmen (MotherDuck)</i>
+    </div><br/>
+    <!-- Poster Session -->
+    <div class="col-md-3"><b>11:20am - 12:00pm</b></div>
+    <div class="col-md-9"><b>Morning Poster Session</b></div><br/>
+
+    <div class="col-md-3"><b>12:00pm - 1:30pm</b></div>
+    <div class="col-md-9"><b>Lunch</b></div><br/>
+    <!-- Session 2: Systems and Frameworks -->
+    <div class="col-md-12"></div><br/>
+    <div class="col-md-3"><b>1:30pm - 2:20pm</b></div>
+    <div class="col-md-9"><b>Session 2: Systems and Frameworks</b> - Chair: Matteo Interlandi</div><br/>
+    <div class="col-md-12"></div>
+    <div class="col-md-3">&nbsp;1:30pm</div>
+    <div class="col-md-9">
+      <b>AIDB: a Sparsely Materialized Database for Queries using Machine Learning</b> (10 min)<br/>
+      <i>Tengjun Jin (UIUC); AKASH MITTAL (UIUC); Chenghao Mo (UIUC); Jiahao Fang (UIUC); Chengsong Zhang (UIUC); Timothy Dai (Stanford University); Daniel Kang (UIUC)</i>
+    </div><br/>
+    <div class="col-md-3">&nbsp;1:40pm</div>
+    <div class="col-md-9">
+      <b>Nautilus: A Benchmarking Platform for DBMS Knob Tuning</b> (10 min)<br/>
+      <i>Konstantinos Kanellis (University of Wisconsin-Madison); Johannes Freischuetz (University of Wisconsin-Madison); Shivaram Venkataraman (University of Wisconsin, Madison)</i>
+    </div><br/>
+    <div class="col-md-3">&nbsp;1:50pm</div>
+    <div class="col-md-9">
+      <b>DLProv: A Data-Centric Support for Deep Learning Workflow Analyses</b> (20 min)<br/>
+      <i>Debora B Pina (Federal University of Rio de Janeiro); Adriane Chapman (University of Southampton); Liliane Kunstmann (Federal University of Rio de Janeiro); Daniel Oliveira (UFF, Brazil); Marta Mattoso (Federal University of Rio de Janeiro)</i>
+    </div><br/>
+    <div class="col-md-3">&nbsp;2:10pm</div>
+    <div class="col-md-9">
+      <b>Reproducible data science over data lakes: replayable data pipelines with Bauplan and Nessie</b> (10 min)<br/>
+      <i>Jacopo Tagliabue (Bauplan); Ciro Greco (Bauplan)</i>
+    </div><br/>
+    <div class="col-md-12"></div>
+    <br/>
+    <!-- Session 3: Edge Computing and ML Deployment -->
+    <div class="col-md-12"></div><br/>
+    <div class="col-md-3"><b>2:20pm - 3:30pm</b></div>
+    <div class="col-md-9"><b>Session 3: Edge Computing and ML Deployment</b> - Chair: Shreya Shankar</div><br/>
+    <div class="col-md-12"></div>
+    <div class="col-md-3">&nbsp;2:20pm</div>
+    <div class="col-md-9">
+      <b>Reaching the Edge of the Edge: Image Analysis in Space</b> (20 min)<br/>
+      <i>Robert Bayer (IT University of Copenhagen); Julian Priest (IT University of Copenhagen); Pinar Tozun (IT University of Copenhagen)</i>
+    </div><br/>
+    <div class="col-md-3">&nbsp;2:40pm</div>
+    <div class="col-md-9">
+      <b>Federated Fine-Tuning of LLMs on the Very Edge: The Good, the Bad, the Ugly</b> (20 min)<br/>
+      <i>Herbert Woisetschlaeger (Technical University of Munich); Alexander Erben (Technical University of Munich); Shiqiang Wang (IBM Research); Ruben Mayer (University of Bayreuth); Hans-Arno Jacobsen (University of Toronto)</i>
+    </div><br/>
+    <div class="col-md-3">&nbsp;3:00pm</div>
+    <div class="col-md-9">
+      <b>Towards Consistent Language Models Using Controlled Prompting and Decoding</b> (10 min)<br/>
+      <i>Jasmin Mousavi (Oregon State University); Arash  Termehchy (Oregon State University)</i>
+    </div><br/>
+    <div class="col-md-3">&nbsp;3:10pm</div>
+    <div class="col-md-9">
+      <b>tailwiz: Empowering Domain Experts with Easy-to-Use, Task-Specific Natural Language Processing Models</b> (20 min)<br/>
+      <i>Timothy Dai (Stanford University); Austin Peters (Stanford); Jonah B Gelbach (Berkeley Law); David Engstrom (Stanford Law School); Daniel Kang (UIUC)</i>
+    </div><br/>
+    <div class="col-md-12"></div>
+
+    <!-- Break -->
+    <div class="col-md-3"><b>3:30pm - 4:00pm</b></div>
+    <div class="col-md-9"><b>Break</b></div><br/>
+
+    <!-- Poster Session -->
+    <div class="col-md-3"><b>4:00pm - 4:40pm</b></div>
+    <div class="col-md-9"><b>Afternoon Poster Session</b></div><br/>
+
+    <!-- Awards and Closing -->
+    <div class="col-md-3"><b>4:45pm - 5:00pm</b></div>
+    <div class="col-md-9"><b>Awards and Closing Remarks</b></div><br/>
+
+    <p><a href="#">&uarr; top</a></p>
+  </div>
+</div>    
+<!-- PROGRAM END -->
+
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"><a name="dates" class="internal">Important Dates</a></div>
+      <div class="col-md-7">
+        <b>Submission deadline</b>: March <s>15</s> 22, 2024, 5pm Pacific Time <br/>
+        <b>Submission website</b>: <a target="_blank" href="https://cmt3.research.microsoft.com/DEEM2024">https://cmt3.research.microsoft.com/DEEM2024</a><br/>
+        <b>Notification of acceptance</b>: April 20, 2024<br/>
+        <b>Final papers due</b>: May 10, 2024<br/>
+        <b>Workshop</b>: Sunday, June 9, 2024<br/>
+        <p><a href="#">&uarr; top</a></p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"><a name="cfp" class="internal">Call for Papers</a></div>
+      <div class="col-md-7">
+
+      <p style="text-align: justify">
+        Applying Machine Learning (ML) in real-world scenarios is a challenging task.
+        In recent years, the main focus of the data management community has been on creating systems and abstractions for the efficient training of ML models on large datasets.
+        However, model training is only one of many steps in an end-to-end ML application, and a number of orthogonal data management problems arise from the large-scale use of ML and increased adoption large language models (LLMs).
+      </p>
+
+      <p style="text-align: justify">For example, data preprocessing and feature extraction workloads may be complicated and require simultaneous execution of relational and linear algebraic operations.
+        Next, model selection may involve searching many combinations of model architectures, features, and hyper-parameters to find the best-performing model.
+        After model training, the resulting model may have to be deployed and integrated into business workflows and require lifecycle management using metadata and lineage.
+        As a further complication, the resulting system may have to take into account a heterogeneous audience, ranging from domain experts without programming skills to data engineers and statisticians who develop custom algorithms.
+        Many such challenges are human or engineer-centered (e.g., monitoring ML pipelines, leveraging LLMs for domain-specific tasks at scale), and DEEM uniquely encourages submissions in such topics.
+      </p>
+      
+      <p style="text-align: justify">Additionally, the importance of incorporating ethics and legal compliance into machine-assisted decision-making is being broadly recognized.
+        Critical opportunities for improving data quality and representativeness, controlling for bias, and allowing humans to oversee and impact computational processes are missed if we do not consider the lifecycle stages upstream from model training and deployment.
+        DEEM welcomes research on providing system-level support to data scientists who wish to develop and deploy responsible machine learning methods.
+      </p>
+      
+      <p style="text-align: justify">DEEM aims to bring together researchers and practitioners at the intersection of applied machine learning, data management and systems research,
+        with the goal to discuss the arising data management issues in ML application scenarios.
+      </p>
+
+      <p><a href="#">&uarr; top</a></p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"><a name="topics" class="internal">Topics of Interest</a></div>
+      <div class="col-md-7">
+        Areas of particular interest for the workshop include (but are not limited to):
+        <ul>
+          <li>Data Management in Machine Learning Applications</li>
+          <li>Definition, Execution and Optimization of Complex Machine Learning Pipelines</li>
+          <li>Systems for ML, e.g. for Managing the Lifecycle of ML Models, Efficient Hyper-parameter Search, or Feature Selection</li>
+          <li>Machine Learning Services in the Cloud</li>
+          <li>Modeling, Storage and Provenance of Machine Learning Artifacts</li>
+          <li>Integration of Machine Learning and Dataflow Systems</li>
+          <li>Integration of Machine Learning and ETL Processing</li>
+          <li>Definition and Execution of Complex Ensemble Predictors</li>
+          <li>Sourcing, Labeling, Integrating, and Cleaning Data for Machine Learning</li>
+          <li>MLOps, Data Validation, and Model Debugging Techniques</li>
+          <li>Privacy-preserving Machine Learning</li>
+          <li>Benchmarking of Machine Learning Applications</li>
+          <li>Responsible Data Management</li>
+          <li>Transparency and Accountability of Machine-Assisted Decision Making</li>
+          <li>Impact of Data Quality and Data Preprocessing on the Fairness of ML Predictions</li>
+          <li>Horror stories, Anecdotes, and Lessons Learned on data management for ML</li>
+          <li>Data management for multimodal ML</li>
+          <li>Vector Databases for Retrieval and Systems for Retrieval Augmented Generation</li>
+          <li>ML for data management for ML</li>
+          <li>Data Management challenges for LLMs</li>
+        </ul>
+
+        <p><a href="#">&uarr; top</a></p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"><a name="submission" class="internal">Submission</a></div>
+      <div class="col-md-7">
+        <p>
+        We invite submissions in the following two tracks:
+        <ul>
+        <li><b>Regular Papers</b> (research and industrial papers; up to <b>8</b>, plus unlimited references)</li>
+        <li><b>Short Papers</b> (preliminary results, interesting use cases, problems, datasets, benchmarks, visionary ideas, system designs, and descriptions of system 
+        components and tools; up to 4 pages)</li>
+        </ul>
+
+        Papers of any category can have at most 2 additional appendix pages.<br>
+        
+        Authors are requested to prepare submissions following the <a href="https://www.acm.org/publications/proceedings-template" target="_blank">ACM proceedings format</a> consistent with the SIGMOD submission guidelines. 
+        Please use the latest ACM paper format with the sigconf template. DEEM is a single-anonymous workshop, authors must include their names  and affiliations on the manuscript cover page. </p> 
+        <!-- <p><b>Submission Website</b>: <a target="_blank" href="https://cmt3.research.microsoft.com/DEEM2024" target="blank">https://cmt3.research.microsoft.com/DEEM2024</a><br/> -->
+          <b>Submission website</b>: <a target="_blank" href="https://cmt3.research.microsoft.com/DEEM2024">https://cmt3.research.microsoft.com/DEEM2024</a><br/>
+        
+          <b>Inclusion and Diversity in Writing</b>: <a target="_blank" href="http://2024.sigmod.org/calls_papers_inclusion_and_diversity.shtml" target="blank">http://2024.sigmod.org/calls_papers_inclusion_and_diversity.shtml</a><br/></p>
+        
+        <p><a href="#">&uarr; top</a></p>
+      </div>
+    </div>
+
+    <!--div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"><a name="acceptedpapers" class="internal">Accepted Papers</a></div>
+      <div class="col-md-7">
+        <b>TBD</b><br/>
+        
+      </div>
+    </div-->
+
+ <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"><a name="invitedspeakers" class="internal">Invited Speakers</a></div>
+      <div class="col-md-7">
+
+        <b>Keynote: Juliana Freire (NYU)</b> 
+      </div>
+    </div> 
+
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"><a name="organisation" class="internal">Organization / People</a></div>
+      <div class="col-md-7">
+        <b>Workshop Chairs</b>:
+        <br/>
+
+        <img src="images/madelon-face.jpg" style="width:50px; height:50px; margin-top: 5px; margin-right: 20px;" class="circle" align="left" /> 
+        <a href="https://madelonhulsebos.com" target="_blank">Madelon Hulsebos</a><br>
+        UC Berkeley, USA
+        <br/>
+        <br/>
+
+        <img src="images/matteo-face.jpg" style="width:50px; height:50px; margin-top: 5px; margin-right: 20px;" class="circle" align="left" /> 
+        <a href="https://interesaaat.github.io/" target="_blank">Matteo Interlandi</a><br>
+        Microsoft GSL, USA
+        <br/>
+        <br/>
+        
+        <img src="images/shreya-face.jpg" style="width:50px; height:50px; margin-top: 5px; margin-right: 20px;" class="circle" align="left" /> 
+        <a href="https://www.shreya-shankar.com/" target="_blank">Shreya Shankar</a><br>
+        UC Berkeley, USA
+        <br/>
+        <br/>
+        
+        <b>Steering Committee</b>:
+        <ul>
+          <li><a href="https://engineering.nyu.edu/faculty/juliana-freire" target="_blank">Juliana Freire</a> (New York University)</li>
+          <li><a href="https://faculty.washington.edu/billhowe/" target="_blank">Bill Howe</a> (University of Washington)</a></li>
+          <li><a href="https://web.eecs.umich.edu/~jag/" target="_blank">H.V. Jagadish</a> (University of Michigan)</a></li>
+          <li><a href="https://www.dima.tu-berlin.de/menue/staff/volker_markl/" target="_blank">Volker Markl</a> (TU Berlin)</li>
+          <li><a href="https://de.linkedin.com/in/stephanseufert" target="_blank">Stefan Seufert</a> (Amazon Research)</a></li>
+          <li><a href="http://www.markusweimer.com/" target="_blank">Markus Weimer</a> (Microsoft AI)</li>
+          <li><a href="http://www.markusweimer.com/" target="_blank">Sebastian Schelter</a> (TU Berlin)</li>
+        </ul>
+
+        <b>Program Committee</b>:
+        <ul>
+        <li>Bojan Karlaš, Harvard University</li>
+        <li>Haralampos Gavriilidis,	Technische Universität Berlin</li>
+        <li>Joy	Arulraj, Georgia Tech</li>
+        <li>Matthias Boehm, Technische Universität Berlin</li>
+        <li>Maximilian Schüle,	University of Bamberg</li>
+        <li>Pinar Tozun,	IT University of Copenhagen</li>
+        <li>Rainer Gemulla,	Universität Mannheim</li>
+        <li>Sebastian Schelter,	University of Amsterdam</li>
+        <li>Stefan Grafberger,	University of Amsterdam</li>
+        <li>Ties Robroek,	IT University of Copenhagen</li>
+        <li>Tilmann Rabl,	HPI / University of Potsdam</li>
+        <li>Vasiliki Kalavri,	Boston University</li>
+        <li>Xiaozhe Yao,	ETH Zurich</li>
+        <li>Yiming Lin,	University of California, Berkeley</li>
+        <li>Yongjoo Park,	University of Illinois at Urbana-Champaign</li>
+        <li>Zezhou Huang, Columbia University</li>
+        </ul>
+        <p><a href="#">&uarr; top</a></p>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"><a name="awards" class="internal">Awards</a></div>
+      <div class="col-md-7">
+        <p>
+          We are very pleased that we can award one talented researcher a travel grant of $1000, with the help of our <a href="#sponsors">sponsors</a>.
+          Applications for this travel award are due 26 April 2023 to enable early-bird registration by 1 May.
+          Please find more information (e.g. eligibility criteria) and apply through the below form:
+          <a href="https://forms.gle/xsUdtes6qLJc7y8Q7" target="blank">Application Form Travel Award DEEM @SIGMOD 2023</a>
+          <br style="clear:left;"/>
+        </p>
+        <p>
+        We will also award the <b>best paper</b> as well as the <b>best presentation</b> during the workshop!
+        <br style="clear:left;"/>
+        </p>
+        <br style="clear:left;"/>
+        <p><a href="#">&uarr; top</a></p>
+      </div>
+
+    </div> -->
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"><a name="sponsors" class="internal">Sponsored by</a></div>
+      <div class="col-md-7">
+        <p>
+          <a href="https://microsoft.com/" target="blank"><img src="images/logos-Microsoft.jpg" style="width:300px; margin-top: 5px; margin-right: 20px;" align="left" /><br style="clear:left;"/></a>
+        </p>
+        <br style="clear:left;"/>
+        <p><a href="#">&uarr; top</a></p>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 stitle"></div>
+      <div class="col-md-7" style="padding-bottom: 10px;">
+        <a href="privacy.html" target="_blank">Privacy Policy</a>
+      </div>
+    </div>
+
+  </body>
+</html>
+
